@@ -25,7 +25,7 @@ public class Room {
 
     @NotNull
     @Column(name = "guests_number", nullable = false, columnDefinition = "BIGINT(20)")
-    private long guestNumber;
+    private long guestsNumber;
 
     @NotNull
     @Column(name = "category", nullable = false, columnDefinition = "VARCHAR(32)")
@@ -41,9 +41,9 @@ public class Room {
     @Column(columnDefinition = "DECIMAL")
     private double price;
 
-    public Room(long roomNumber, long guestNumber, RoomCategory category, RoomStatus status, double price) {
+    public Room(long roomNumber, long guestsNumber, RoomCategory category, RoomStatus status, double price) {
         this.roomNumber = roomNumber;
-        this.guestNumber = guestNumber;
+        this.guestsNumber = guestsNumber;
         this.category = category;
         this.status = status;
         this.price = price;
