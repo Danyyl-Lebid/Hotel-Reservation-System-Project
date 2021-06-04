@@ -2,6 +2,6 @@ package hotel.model;
 
 public enum ReservationStatus {
 
-    CREATED, CONFIRMED, PAID, CANCELED
+    CREATED, CONFIRMED, PAID, CANCELLED
 
 }
